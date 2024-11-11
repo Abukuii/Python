@@ -1,40 +1,3 @@
-# Funktsiyalar
-# darsda so'ralgan masalaga yechim
-# def uzbek_number(num):
-# #
-# #     ones = ['bir', 'ikki', 'uch', 'to\'rt', 'besh', 'olti', 'yetti', 'sakkiz', 'to\'qqiz']
-# #     tens = ['', 'o\'n', 'yigirma', 'o\'ttiz', 'qirq', 'ellik', 'oltmish', 'yetmish', 'sakson', 'to\'qson']
-# #     if num == 0: return "nol"
-# #     if num < 10:
-# #         return ones[num-1]
-# #     elif num < 20:
-# #         return 'o\'n ' + ones[num % 10-1]
-# #     elif num < 100:
-# #         return tens[num // 10] + (' ' + ones[num % 10-1] if num % 10 != 0 else '')
-# #     elif num < 1000:
-# #         return ones[num // 100-1] + ' yuz ' + uzbek_number(num % 100)
-# #     elif num < 1_000_000:
-# #         return uzbek_number(num // 1_000) + ' ming ' + uzbek_number(num % 1_000)
-# #     elif num < 1_000_000_000:
-# #         return uzbek_number(num // 1_000_000) + ' million ' + uzbek_number(num % 1_000_000)
-# #     elif num < 1_000_000_000_000:
-# #         return uzbek_number(num // 1_000_000_000) + ' milliard ' + uzbek_number(num % 1_000_000_000)
-# #
-# #     else:
-# #         return 'Xato raqam'
-# #
-# # print(uzbek_number(2112401001))
-
-
-# summa = 0
-# i = 0
-# while i < 6:
-#     if i % 2 == 1:
-#         summa += i
-#         i += 2
-#     else:
-#         i += 1
-# print(summa)
 
 #1 data_user
 # name = input('Ismingizni kiriting? >>> ')
@@ -92,6 +55,8 @@
 # def list_sum(mylist):
 #     summa = sum(mylist)
 #     return summa
+#
+#
 # #     summa = 0
 # #     for i in mylist:
 # #         summa += i
@@ -102,23 +67,83 @@
 # print(list_sum(mylist))
 # print(mylist)
 
-#4
-# mylist = int(input("Sonni kiriting"))
 
-
-# def mylist():
-#     while True:
-#         son = int(input("Sonni kirit >>>"))
-#         summa = 0
-#         if son == 0:
-#             print(summa)
-#             break
-#         else:
-#             summa += son
-#             print('son qoshildi! ')
+#5
+# son = int(input("Sonni kiriting >>> "))
+# daraja = int(input("darajasini kiriting >>> "))
 #
-# mylist()
+# def sonni_darajasi(s, d):
+#     """Sonni darajasini chiqarib beruvchi funktsiya"""
+#     pow = s ** d
+#     return pow
+#
+# print(sonni_darajasi(son, daraja))
 
+
+#6
+# son1 = int(input('A Sonni kiriting >>> '))
+# daraja1 = int(input("A Darajani kiriting >>>"))
+# son2 = int(input('B Sonni kiriting>>> '))
+# daraja2 = int(input("B Darajani kiriting >>>"))
+#
+# def sonni_darajalari(s1, s2, d1, d2):
+#     pow = s1 ** d1, s2 ** d2
+#     return pow
+# print(sonni_darajalari(son1, son2, daraja1, daraja2))
+
+
+#7
+
+def digit_count_and_sum(word):
+    # Raqamlarning yig'indisini hisoblash
+    # Raqamlarning yig'indisini hisoblash uchun boshlang'ich qiymat
+    d_sum = 0
+    d_count = 0
+
+    # Har bir belgini tekshirish uchun sikl
+    for char in word:
+        # Agar belgi raqam bo'lsa
+        if char.isdigit():
+            # Belgini raqam (integer) ko'rinishiga o'tkazamiz va d_sum ga qo'shamiz
+            d_sum += int(char)
+            d_count += 1
+
+    return f"Sonni yig'indisi {d_sum}, soni {d_count} ta"
+
+
+# nom = 'w3o4r5d'
+# print(digit_count_and_sum(nom))
+
+#8
+def add_right(a, b):
+    return str(a) + str(b)
+
+# print(add_right(5, 6))
+
+#9
+def add_left(a, b):
+    return str(b) + str(a)
+
+# print(add_left(5, 6))
+
+
+#10
+def work_with_list(a):
+    m = min(a)
+    for i in range(len(a)):
+        a[i] *= m
+    return a
+
+# print(work_with_list([3,5,7]))
+
+#11
+example = {
+    "yanvar": 12000,
+    "fervral": 6000,
+    "aprel": 15000,
+    "sentabr": 9000,
+    "dekabr": 10000,
+}
 
 def max_sales(sales):
     if not sales:
@@ -128,8 +153,55 @@ def max_sales(sales):
     max_sale = None
 
     for key, value in sales.items():
-        """dgiufbndfjgb"""
+        """Eng kop sotilgan oyni aniqlovchi funksiya"""
         if max_sale is None or value > max_sale:
             max_sale = value
             max_sale_month = key
-            return
+
+    return max_sale_month
+
+# print(max_sales(example))
+
+#12
+
+def min_max(numbers, max_num, min_num):
+    max1 = max(numbers)
+    min1 = min(numbers)
+    if max1 == max_num:
+        print("to'gri topdingiz")
+    else: print("Xato")
+    if min1 == min_num:
+        print("togri topdingiz")
+    else: print("xato")
+
+# min_max([1,2,3,5,7], 7, 1)
+
+
+#13
+def expensiveProducts(products):
+    price = 0
+    name1 = None
+
+    for product in products:
+        if product["price"] > price:
+            price = product["price"]
+            name1 = product["name"]
+
+    return name1
+
+arr = [
+    {
+        "name": "Iphone X",
+        "price" : 600
+    },
+{
+        "name": "Iphone 12",
+        "price" : 1500
+    },
+{
+        "name": "Iphone Samsung note 9",
+        "price" : 800
+    },
+]
+
+print(expensiveProducts(arr))
