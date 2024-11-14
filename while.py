@@ -94,3 +94,29 @@
 #         print(f"{Euroo / Euro} ni tashkil qiladi")
 #     else:
 #         print("Error")
+
+
+# While masala txt
+
+#3
+# While orqali Ro'yxatdagi 2-eng katta sonni topuvchi dastur yozing
+def second_largest(raqamlar):
+    if len(raqamlar) < 2:
+        return None  # Agar ro'yxatda kamida 2 ta son bo'lmasa, None qaytaramiz
+
+    eng_katta = float()  # Eng katta son uchun boshlang'ich qiymat
+    ikkinchi = float()  # Ikkinchi eng katta son uchun boshlang'ich qiymat
+    raqam = 0  # Ro'yxat bo'ylab yurish uchun indeks
+
+    while raqam < len(raqamlar):
+        son = raqamlar[raqam]
+        if son > eng_katta:
+            ikkinchi = eng_katta  # Eski eng kattani ikkinchi eng katta sifatida belgilaymiz
+            eng_katta = son  # Yangi eng katta topildi
+        elif eng_katta > son > ikkinchi:
+            ikkinchi = son  # Ikkinchi eng katta topildi
+        raqam += 1  # Keyingi elementga o'tish
+
+    return ikkinchi # Natijani qaytarish
+
+# print(second_largest([3, 5, 7, 2, 8]))  # Natija: 7
