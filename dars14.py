@@ -151,7 +151,6 @@ def main():
 
 
 # Dasturni ishga tushirish
-main()
 
 #4
 # 4. Raqamlar ro'yxatini oladigan va ro'yxatdagi har bir raqamning takrorlanish sonini o'z ichiga
@@ -214,6 +213,4 @@ def max_ball_students(talabalar):
 
 # Misol
 talabalar = {"Akmal": 64, "Tohir": 55, "Nodir": 76, "Zafar": 80}
-resultt = max_ball_students(talabalar)
-# print(resultt)  # {'Zafar': 80, 'Nodir': 76}
 
