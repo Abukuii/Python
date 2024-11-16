@@ -1,0 +1,44 @@
+
+Son - Int
+Text - Str
+Kasr - Float
+Ctrl + Alt + L - Listni ichidagi malumotlarni tartiblab beradi
+Arr - List['apple', 'banana'] malumotlarni toplash uchun bu listni o'zgartirsa bo'ladi o'zgaruvchan
+Obyect - Tuple('apple', 'banana') malumotlarni hajmini kamroq qilib saqlaydi o'zgartirib bo'lmaydi
+Dictionary - Dict{'name': age} Obyektlarni malumotlarini saqlaydi
+Set - Set{}bir xil turdagi malumotlarni faqat bittasini saqlaydi va random holatda bo'ladi tartibsiz
+listda malumotlarni olish list[0] sanoq 0 dan boshlanadi
+docstring = ''' malumot '''
+fstring = f''' malumot '''
+boolean - bool: True False mantiqiy malumot turlari
+data types - str, int, float, bool, list[], tuple(), dict{}, set{}
+Python - General, Abstraction High Level. Dynamic, Strong, Interpretatsion, 
+General - Bu ko'p tarmoqli yani juda kop sohalarga kirib ketadigan umumiy til ko'p amallar bajarsa bo'ladi Java JavaScript C++ C#
+Static - Bu faqat bitta sohaga asoslashtirilgan bo'ladi. Php shulardan biri
+Abstction High level Low Level
+Dynamic - Bu aqlli degani malumot turlarini o'z avtomatik tarzda aniqlaydi a = 4 b = 'string' 
+Strong va Week kuchli va kuchsiz bo'ladi a + b xatolik bersa bu kuchli yani raqam va harf bir biriga qo'shila olmaydi Python Strong
+Week malumot turlarini qo'shib yuboradi JavaScript har ikkalasiga ham kiradi malumot turini o'zi topadi lekin amallar bajarganda son va matnni qo'shib yuboradi
+Static - Bu kuchsiz malumot turlarini ozimiz qolda kiritishimiz kerak int a = 4, str b = 'string', float c = 4.5
+Interpratsion - Bu kodlarni ketma ket o'qiydi va parallel ravishda mashina tiliga o'tkazadi. Agar qandaydir xatolik topsa shu zahoti toxtaydi undan keyingi kodlarni 
+o'qimaydi 1ta xato chiqsa stop boshqa xatolarni xam korsatmaydi 1chi xatolik togirlansa keyin korsatadi qolganini Python shunaqa ishlaydi
+Compilatsion - Bu bir vaqtni o'zida hamma kodlarni o'qiydi va undan keyin mashina tiliga o'tkazadi. Agar xatolik topsa nechta bosa hammasini chiqaradi 
+bu turdagi dasturlash tillari ancha tez ishlaydi Python esa sekinroq bularga nisbatan
+Pythonda hama narsa obyekt
+Mutable Immutable 
+Mutable - Ozgaradigan malumot turlari: List, Dict, Set bular o'ziga yangi malumot qabul qiganda xotiradagi joyini emas malumotini o'zgartiradi
+Immutable - O'zgarmaydigan malumot turlari: Int, Str, Tuple, Float bular malumot qabul qiganda xotiradagi joyini o'zgartiradi eski malumoti xam xotirani boshqa qismida turadi
+id() - Bu malumotni xotiradagi joyini id raqamini bilish uchun ishlatiladi
+Operatorlar va operandlar 2 + 3 'str' + 'text'
+operator bu amallar: + - * / operandlar bu: ular ustida bajarilayotgan malumotlar 2,3, 4,5 'string'
+Unary - Birlik Opertorlari:  +, -, *. /
+Binary - Ikkilik Operatorlari: <, >, >=, <=, !=
+Ternary - Uchlik Operatorlari: if, elif, else
+
+Arithmetic operands - Arifmetik operatorlari: +, -, *, /
+Assigment operands - Oshirish operatorlari: +=, -=, *=, /=, 
+Comparison operands - Tenglash Operatorlari: ==, !=, >, <
+Logical operands - Logika Operatorlari: and, or, not
+Membership operands - Azolik operatorlari: in, not in
+Bitwise operands - Bitli Operatorlari: &, |, ^, 
+ 
