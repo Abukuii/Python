@@ -123,6 +123,7 @@ nums1 = [1, 2, 3, 4, 5, 6]
 # Listdagi elementlarni mos indexi bo'yicha ayiring
 # print(list(map(lambda x, y: x - y, [2, 3, 5], [1, 2, 4])))
 
+
 #12 - MISOL
 # lISTDAGI elementlarni katta harfga o'tkazing
 text1 = ['processing', 'strings', 'with', 'map']
