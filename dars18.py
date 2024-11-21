@@ -52,5 +52,5 @@ km_to_m= lambda x: x*1000
 m_to_sm= lambda x: x * 100
 
 km_to_sm = compose(m_to_sm, km_to_m)
-print(km_to_sm(12))   # Output 1 200 000
+# print(km_to_sm(12))   # Output 1 200 000
 

@@ -68,9 +68,9 @@
 # #         return 'Xato raqam'
 # #
 # # print(uzbek_number(2112401001))
-from curses.ascii import isalnum, isdigit
+# from curses.ascii import isalnum, isdigit
 
-from hangman_game import letter
+# from hangman_game import letter
 
 
 # summa = 0
@@ -83,4 +83,30 @@ from hangman_game import letter
 #         i += 1
 # print(summa)
 
+def ikiuch():
+    for i in range(1, 41):
+        if i % 2 == 0 and i % 3 == 0:
+            print(i)
+# ikiuch()
 
+royxat = {
+    "yanvar": 12000,
+    'fevral': 6000,
+    'aprel': 15000,
+    'sentabr': 9000,
+    'dekabr': 10000,
+}
+
+def big_sales(sales):
+    max_month = None
+    max_money = 0
+    for month, money in sales.items():
+        if money > max_money:
+            max_money = money
+            max_month = month
+    return max_month
+# print(big_sales(royxat))
+
+def max_sale(sales):
+    return max(sales, key=sales.get)
+print(max_sale(royxat))

@@ -54,7 +54,7 @@ def merge_list(l1, l2):
 
 
 # def merge_list(l1, l2):
-#     if len(l1) != len(l2):
+    # if len(l1) != len(l2):
 #         raise ValueError("Ro'yxatlar uzunligi bir xil bo'lishi kerak")  # Uzunliklar mos kelmasa, xatolik chiqaramiz
 #     return dict(zip(l1, l2))  # zip yordamida juftliklar yaratamiz va dict orqali lug'atga o'giramiz
 

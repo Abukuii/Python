@@ -5,7 +5,7 @@
 #
 # if len(pochtalar) > 0:
 #     for pochta in pochtalar:
-#         if pochta.find('@') != -1:
+#         if pochta.find('@') != -1 and pochta.find(".") != -1:
 #             print(f"{int(pochtalar.index(pochta)) + 1} - email manzili {pochta} Qabul qilindi")
 #         else: print(f"{int(pochtalar.index(pochta)) + 1} - email manzili {pochta} Bu pochta qabul qilinmadi")
 
@@ -82,3 +82,38 @@ rasmlar = []
 #
 # print(musiqalar)
 # print(rasmlar)
+
+"""
+foydalanuvchidan qiziqishlari so'ralsin.
+
+Agar kitob yoki kutubxona qiziqishlari orasida bo'lsa, qanday kitoblar yoqishi so'ralsin.
+    agar detektiv so'zini ishlatsa, shaytanat kitobi haqidagi fikri so'ralsin.
+    agar diniy kitoblarga qiziqsa "Hadis va Hayot" kitoblar to'plamini sovg'a qilamiz deyilsin.
+
+Agar sport so'zi qiziqishlari orasida bo'lsa, qaysi sport turiga qiziqishi so'ralsin,
+   agar futbol sport turlari orasida bo'lsa, qaysi komandani yoqtirishi so'ralsin.
+        agar real yoki barsa komandasini yozsa, el-classicoga chipta sovg'a qilamiz deyilsin
+"""
+
+# ism = input("Ismingiz >>> ")
+# qiziqishlari = input(f"Salom {ism}, Nimalarga qiziqasiz >>> ")
+#
+# for qiziqish in qiziqishlari:
+#     if qiziqish.find('kitob') != -1 or qiziqish.find('kutubxona') != -1:
+#         savol = input(f'{ism} sizga qanday kitoblar yoqadi? >>> ')
+#         for tur in savol:
+#             if tur.find('detektiv') != -1:
+#                 savol1 = input(f'{ism} Shaytanat kitobi haqida fikringiz >> ')
+#                 print('Ajoyib fikrlar uchun rahmat')
+#             elif tur.find('diniy') != -1:
+#                 print('Sizga Hadis va hayot kitobini sovga qilamiz')
+#                 break
+#     elif qiziqish.find('sport') != -1:
+#         savol2 = input(f'{ism} Qaysi sport turiga qiziqasiz? >>> ')
+#         for sport in savol2:
+#             if sport.find('futbol') != -1:
+#                 savol3 = input(f'{ism} qaysi jamoaga muxlislik qilasiz >>> ')
+#                 for jamoa in savol3:
+#                     if jamoa.find('real') != -1 or jamoa.find('barsa') != -1:
+#                         print('El classico ga sovga qilamiz!')
+#     else: print('Error')
